@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: padding 0.3s ease, margin 0.3s ease, height 0.3s ease, width 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: white;
+}
+
+body::-webkit-scrollbar { 
+    display: none;
+}
+
+@font-face {
+    font-family: Cascadia;
+    src: url('fonts/Cascadia.ttf');
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url('fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url('fonts/Poppins-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url('fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('fonts/Quicksand-Bold.ttf');
+}
+
+@font-face {
+    font-family: Quicksand-SemiBold;
+    src: url('fonts/Quicksand-SemiBold.ttf');
+}
+
+.elementsHide{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.elementsHide.visible{
+    opacity: 1;
+}
