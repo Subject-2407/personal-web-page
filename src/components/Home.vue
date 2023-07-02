@@ -1,11 +1,16 @@
+<!-- halaman utama -->
+
 <template>
     <div id="homeContainer">
         <div id="homeLeft" style="margin-top: 120px; flex-basis: 713px;">
+            <!-- intro menggunakan library vue writer-->
             <p id="hw" class="dark:text-white"><VueWriter :array="['Hello, World!']" :typeSpeed=50 :iterations="1"/><VueWriter :array="['','My name is']" :delay=1100 :typeSpeed=50 :iterations="1"/></p>
             <p class="text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600" id="myName">
+                <!-- nama -->
                 <VueWriter :array="['','Bintang A\'raaf Stevan Putra']" :typeSpeed=50 :delay="2000" :iterations="1"/>
             </p>
             <br>
+            <!-- bidang yang diminati -->
             <div id="codeBox" class="elementsHide">
                 /* I'm interested in.. */<br>
                 <p id="interest"><span class="codeSymbol">&lt;</span><span style="color: #f73374;">p</span><span class="codeSymbol">&gt;</span><span style="color: #f4f7fa;">
@@ -13,15 +18,17 @@
                 </span><span class="codeSymbol">&lt;/</span><span style="color: #f73374;">p</span><span class="codeSymbol">&gt;</span></p>
             </div>
         </div>
+        <!-- foto pribadi -->
         <div class="elementsHide" id="homeRight" style="flex-shrink: 2;">
-            <img class="w-auto rounded-full ring ring-offset-8 ring-slate-200 dark:ring-slate-500 dark:ring-offset-slate-700" src="@/assets/img/avatar.jpg" style="width: 961px;" alt="My Avatar">
+            <img class="rounded-full ring ring-offset-8 ring-slate-200 dark:ring-slate-500 dark:ring-offset-slate-700" src="@/assets/img/avatar.jpg" style="width: 961px;" alt="My Avatar">
         </div>
+        <!-- daftar kontak -->
         <div id="links">
             <HomeLinks :size="120" url="https://bit.ly/3r9sOwj" img="linkedin.png" :imgSize="70" :transform="{ translateX: 520, translateY: 345 }"/>
             <HomeLinks :size="90" url="https://bit.ly/3pzUSbA" img="github.png" :imgSize="70" :transform="{ translateX: 860, translateY: 340 }"/>
             <HomeLinks :size="70" url="https://bit.ly/3JB7Cpm" img="whatsapp.png" :imgSize="55" :transform="{ translateX: 835, translateY: 0 }"/>
             <HomeLinks :size="45" url="https://bit.ly/3Jx7XJt" img="telegram.png" :imgSize="30" :transform="{ translateX: 907, translateY: -15 }"/>
-            <HomeLinks :size="60" url="https://bit.ly/3PAMao9" img="gmail.png" :imgSize="37" :transform="{ translateX: 920, translateY: 120 }"/>
+            <HomeLinks :size="60" url="https://bit.ly/4361e0k" img="gmail.png" :imgSize="37" :transform="{ translateX: 920, translateY: 120 }"/>
         </div>
     </div>
 </template>

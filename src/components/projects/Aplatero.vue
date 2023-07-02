@@ -5,7 +5,7 @@
         <ul class="text-gray-400 mb-4">
             <li>Technologies/Frameworks used : React Native, Arduino</li>
         </ul>
-        <p class="projectDescription dark:text-slate-300">Aplatero is my another collaborative project with my former school. It stands for 'Automated Plant Watering of Espero' with 'Espero' being the name of my former school. As the name suggests, this project aims to create a flexible automated plant watering system, utilizing Arduino as the hardware component and React Native for the mobile application.</p>
+        <p class="projectDescription text-gray-600 dark:text-slate-300">Aplatero is my another collaborative project with my former school. It stands for 'Automated Plant Watering of Espero' with 'Espero' being the name of my former school. As the name suggests, this project aims to create a flexible automated plant watering system, utilizing Arduino as the hardware component and React Native for the mobile application.</p>
     </div>
 </template>
 

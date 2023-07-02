@@ -5,7 +5,7 @@
         <ul class="text-gray-400 mb-4">
             <li>Technologies/Frameworks used : Laravel, Arduino</li>
         </ul>
-        <p class="projectDescription dark:text-slate-300">The RFID Attendance System (abbreviated as SMARD), also known as Sistem Absensi RFID in Indonesian, is my collaborative project with my former school in order to take part in a competition. This simple project aims to make a real-time attendance system based on Arduino and RFID technology. </p>
+        <p class="projectDescription text-gray-600 dark:text-slate-300">The RFID Attendance System (abbreviated as SMARD), also known as Sistem Absensi RFID in Indonesian, is my collaborative project with my former school in order to take part in a competition. This simple project aims to make a real-time attendance system based on Arduino and RFID technology. </p>
     </div>
 </template>
 

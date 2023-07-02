@@ -1,4 +1,10 @@
+// program utk mengecek apakah colorTheme == dark dan melakukan intro custom
+
 export const smoothStart = () => {
+    const imgSrc = (dir,iconName) => {
+        return new URL(`./assets/img/${dir}/${iconName}`, import.meta.url).href;
+    }
+    
     const themeIcon = document.querySelector("#themeIcon");
     const catoLogo = document.querySelector("#catoLogo");
     const incubatorLogo = document.querySelector("#incubatorLogo");
@@ -6,10 +12,10 @@ export const smoothStart = () => {
     if(localStorage.getItem('colorTheme') === 'dark'){
         document.documentElement.classList.add('dark');
         document.querySelector('body').style.backgroundColor = '#334155';
-        themeIcon.src="src/assets/img/icons/dark.png";
+        themeIcon.src=imgSrc('icons','dark.png');
         themeIcon.style.filter = 'invert(1)';
-        catoLogo.src="src/assets/img/projects/cato_dark.png";
-        incubatorLogo.src="src/assets/img/projects/incubator_dark.png";
+        catoLogo.src=imgSrc('projects','cato_dark.png');
+        incubatorLogo.src=imgSrc('projects','incubator_dark.png');
     }
 
     setTimeout(() => {

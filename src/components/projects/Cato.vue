@@ -6,7 +6,7 @@
             <li>Technologies/Frameworks used : jQuery, Laravel</li>
             <li><a href="https://ecato.my.id" tabindex="-1">https://ecato.my.id</a></li>
         </ul>
-        <p class="projectDescription dark:text-slate-300">Cato is one of my school project, and is meant to create a kind of Learning Management System (LMS) platform in a web app form. The name 'Cato' is derived from the Latin word '<i>cato</i>', which means 'all-knowing. I lead this project on a 6-person team including myself.</p>
+        <p class="projectDescription text-gray-600 dark:text-slate-300">Cato is one of my school project, and is meant to create a kind of Learning Management System (LMS) platform in a web app form. The name 'Cato' is derived from the Latin word '<i>cato</i>', which means 'all-knowing. I lead this project on a 6-person team including myself.</p>
     </div>
 </template>
 

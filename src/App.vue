@@ -1,21 +1,25 @@
 <template>
   <div id="wrapper" class="bg-white dark:bg-slate-700">
     <header class="sticky top-0 z-50">
+      <!-- komponen navbar -->
       <Navbar />
     </header>
     <main class="z-1">
+      <!-- komponen halaman utama -->
       <Home />
       <hr class="border-2 dark:border-slate-500">
       <Transition name="slide-fade">
+        <!-- komponen tentang saya -->
         <About v-if="show" />
       </Transition>
       <hr class="border-2 dark:border-slate-500">
       <Transition name="slide-fade">
+         <!-- komponen keterampilan saya -->
         <Skills v-if="show" />
       </Transition>
       <hr class="border-2 dark:border-slate-500">
+       <!-- komponen proyek - proyek -->
       <Projects />
-      <br><br><br>
     </main>
   </div>
 </template>
@@ -39,7 +43,7 @@ setTimeout(() => {
     elements[i].style.opacity = "1";
     elements[i].style.width = '100%';
   }
-  },4500);
+},4800);
 
 </script>
 <style scoped>
@@ -69,5 +73,4 @@ hr{
   transform: translateX(20px);
   opacity: 0;
 }
-
 </style>

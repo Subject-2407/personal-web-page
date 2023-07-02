@@ -1,8 +1,11 @@
+<!-- halaman keterampilan -->
+
 <template>
     <div id="skillsContainer" class="my-12">
         <p id="skillsTitle" class="text-center text-3xl dark:text-white">💻 Skills 💻</p>
         <p id="skillsTitle2" class="text-center text-slate-400 mt-1">Top technologies I have experienced so far</p>
         <ul id="techContainer" class="flex flex-row flex-wrap gap-9 mt-7 px-12">
+            <!-- menggunakan komponen eksternal -->
             <Techs img="html.png" :size="60"/>
             <Techs img="css.png" :size="60"/>
             <Techs img="js.png" :size="55"/>

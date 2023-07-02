@@ -1,3 +1,5 @@
+<!-- halaman tentang saya -->
+
 <template>
     <div id="aboutContainer">
        <p id="aboutTitle" class="text-3xl mb-7 dark:text-white">About Me</p>

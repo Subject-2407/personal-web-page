@@ -1,7 +1,10 @@
+<!-- halaman proyek -->
+
 <template>
     <div id="projectsContainer" class="my-12 px-3 overflow-x-hidden hidden">
         <p id="projectsTitle" class="text-right text-2xl mb-10 dark:text-white">My Recent Projects</p>
         <div id="projects" class="flex flex-row gap-8 5px">
+            <!-- daftar proyek -->
             <button @click="selectProject(1)" id="project1" class="project focus:outline-none focus:ring-orange-500 dark:focus:ring-orange-500 hover:ring-orange-500 dark:hover:ring-orange-500 hover:shadow-xl dark:hover:shadow-xl hover:cursor-pointer ring-2 ring-slate-200 ring-offset-8 rounded dark:ring-slate-500 dark:ring-offset-slate-700">
                 <img id="catoLogo" src="@/assets/img/projects/cato.png" style="height:60px;">
             </button>
@@ -16,11 +19,13 @@
             </button>
         </div>
         <div class="projectsCarousel" style="margin-top: 70px;">
+            <!-- menggunakan komponen eksternal untuk menampilkan deskripsi proyek -->
             <Cato />
             <Incubator />
             <Smard />
             <Aplatero />
         </div>
+        <br><br><br>
     </div>
 </template>
 
@@ -57,7 +62,7 @@ export default{
     mounted(){
         setTimeout(() => {
             document.querySelector("#projectsContainer").style.display = 'block'
-        },4500);
+        },4800);
     }
 };
 </script>
